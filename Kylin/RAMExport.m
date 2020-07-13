@@ -125,17 +125,16 @@ BOOL RAMHasSection(char *segname, char *sectname) {
 }
 
 NSObject * RAMGetString(NSString *key) {
-    Dl_info info;
+    Dl_info info;//info.dli_fbase就是mach-o的起始地址。
     dladdr((const void *)&RAMGetString, &info);
-    
+    //mach_header就是machheader
     const RAMExportValue mach_header = (RAMExportValue)info.dli_fbase;
-    const RAMExportSection *section = RAMGetSectByNameFromHeader((void *)mach_header, "__RAM", "__ram.data");
+    //通过machheader可以找到对应的section，getsectbynamefromheader_64是mach-o/getsect.h中的一个API，其中的key就是"__ram.data"
+    const RAMExportSection *section = RAMGetSectByNameFromHeader((void *)mach_header, "__RAM", "__ram.data");//key);
     if (section == NULL) return nil;
-    
+    //读取出来的section中可能包含多个变量，我们要把所有的变量都进行读取，并通过函数指针进行对函数的调用。这里遍历时需要用到偏移量，section的offet是基于mach-o的偏移量，所以mach-o的起始位置加上section的offset就是一个section的开始，每次迭代读取RAM_String的大小，直到该段读取完成，也就是mach_header + section->offset + section->size
     int addrOffset = sizeof(struct RAM_String);
-    for (RAMExportValue addr = section->offset;
-         addr < section->offset + section->size;
-         addr += addrOffset) {
+    for (RAMExportValue addr = section->offset; addr < section->offset + section->size; addr += addrOffset) {
         struct RAM_String entry = *(struct RAM_String *)(mach_header + addr);
 //        if (strcmp(entry.key, key) == 0) {
         NSString *entryKey = (NSString *)entry.key;

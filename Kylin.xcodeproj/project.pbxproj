@@ -51,7 +51,26 @@
 		137994FF24AC683A00D382ED /* RAMStageB.m in Sources */ = {isa = PBXBuildFile; fileRef = 137994F524AC683900D382ED /* RAMStageB.m */; };
 		1379950024AC683A00D382ED /* RAMStageA.m in Sources */ = {isa = PBXBuildFile; fileRef = 137994F624AC683900D382ED /* RAMStageA.m */; };
 		1379950124AC683A00D382ED /* RAMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 137994F924AC683900D382ED /* RAMData.m */; };
+		13AAA16B24B59E76002A7A8A /* KylinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AAA16A24B59E76002A7A8A /* KylinTests.m */; };
+		13AAA17924B59EA6002A7A8A /* KylinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AAA17824B59EA6002A7A8A /* KylinUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13AAA16D24B59E76002A7A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137993F624AC1E6400D382ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137993FD24AC1E6400D382ED;
+			remoteInfo = Kylin;
+		};
+		13AAA17B24B59EA6002A7A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137993F624AC1E6400D382ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137993FD24AC1E6400D382ED;
+			remoteInfo = Kylin;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		137993FE24AC1E6400D382ED /* Kylin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kylin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +152,12 @@
 		137994FA24AC683900D382ED /* RAMData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMData.h; sourceTree = "<group>"; };
 		137994FB24AC683900D382ED /* RAMBlockB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMBlockB.h; sourceTree = "<group>"; };
 		137994FC24AC683900D382ED /* RAMStageB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMStageB.h; sourceTree = "<group>"; };
+		13AAA16824B59E76002A7A8A /* KylinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KylinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AAA16A24B59E76002A7A8A /* KylinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KylinTests.m; sourceTree = "<group>"; };
+		13AAA16C24B59E76002A7A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AAA17624B59EA6002A7A8A /* KylinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KylinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AAA17824B59EA6002A7A8A /* KylinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KylinUITests.m; sourceTree = "<group>"; };
+		13AAA17A24B59EA6002A7A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +196,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13AAA16524B59E76002A7A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AAA17324B59EA6002A7A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -182,6 +221,8 @@
 				1379949324AC2F7D00D382ED /* struct */,
 				137994B024AC32B200D382ED /* function */,
 				137994D124AC638F00D382ED /* MustOverrider */,
+				13AAA16924B59E76002A7A8A /* KylinTests */,
+				13AAA17724B59EA6002A7A8A /* KylinUITests */,
 				137993FF24AC1E6400D382ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -194,6 +235,8 @@
 				1379949224AC2F7D00D382ED /* struct.app */,
 				137994AF24AC32B200D382ED /* function.app */,
 				137994D024AC638F00D382ED /* MustOverrider.app */,
+				13AAA16824B59E76002A7A8A /* KylinTests.xctest */,
+				13AAA17624B59EA6002A7A8A /* KylinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,6 +358,24 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		13AAA16924B59E76002A7A8A /* KylinTests */ = {
+			isa = PBXGroup;
+			children = (
+				13AAA16A24B59E76002A7A8A /* KylinTests.m */,
+				13AAA16C24B59E76002A7A8A /* Info.plist */,
+			);
+			path = KylinTests;
+			sourceTree = "<group>";
+		};
+		13AAA17724B59EA6002A7A8A /* KylinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13AAA17824B59EA6002A7A8A /* KylinUITests.m */,
+				13AAA17A24B59EA6002A7A8A /* Info.plist */,
+			);
+			path = KylinUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +464,42 @@
 			productReference = 137994D024AC638F00D382ED /* MustOverrider.app */;
 			productType = "com.apple.product-type.application";
 		};
+		13AAA16724B59E76002A7A8A /* KylinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AAA17124B59E76002A7A8A /* Build configuration list for PBXNativeTarget "KylinTests" */;
+			buildPhases = (
+				13AAA16424B59E76002A7A8A /* Sources */,
+				13AAA16524B59E76002A7A8A /* Frameworks */,
+				13AAA16624B59E76002A7A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13AAA16E24B59E76002A7A8A /* PBXTargetDependency */,
+			);
+			name = KylinTests;
+			productName = KylinTests;
+			productReference = 13AAA16824B59E76002A7A8A /* KylinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13AAA17524B59EA6002A7A8A /* KylinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13AAA17D24B59EA6002A7A8A /* Build configuration list for PBXNativeTarget "KylinUITests" */;
+			buildPhases = (
+				13AAA17224B59EA6002A7A8A /* Sources */,
+				13AAA17324B59EA6002A7A8A /* Frameworks */,
+				13AAA17424B59EA6002A7A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13AAA17C24B59EA6002A7A8A /* PBXTargetDependency */,
+			);
+			name = KylinUITests;
+			productName = KylinUITests;
+			productReference = 13AAA17624B59EA6002A7A8A /* KylinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -427,6 +524,14 @@
 					137994CF24AC638F00D382ED = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					13AAA16724B59E76002A7A8A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 137993FD24AC1E6400D382ED;
+					};
+					13AAA17524B59EA6002A7A8A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 137993FD24AC1E6400D382ED;
+					};
 				};
 			};
 			buildConfigurationList = 137993F924AC1E6400D382ED /* Build configuration list for PBXProject "Kylin" */;
@@ -447,6 +552,8 @@
 				1379949124AC2F7D00D382ED /* struct */,
 				137994AE24AC32B200D382ED /* function */,
 				137994CF24AC638F00D382ED /* MustOverrider */,
+				13AAA16724B59E76002A7A8A /* KylinTests */,
+				13AAA17524B59EA6002A7A8A /* KylinUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -499,6 +606,20 @@
 				137994E224AC639100D382ED /* LaunchScreen.storyboard in Resources */,
 				137994DF24AC639100D382ED /* Assets.xcassets in Resources */,
 				137994DD24AC638F00D382ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AAA16624B59E76002A7A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AAA17424B59EA6002A7A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +690,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13AAA16424B59E76002A7A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AAA16B24B59E76002A7A8A /* KylinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AAA17224B59EA6002A7A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AAA17924B59EA6002A7A8A /* KylinUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13AAA16E24B59E76002A7A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137993FD24AC1E6400D382ED /* Kylin */;
+			targetProxy = 13AAA16D24B59E76002A7A8A /* PBXContainerItemProxy */;
+		};
+		13AAA17C24B59EA6002A7A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137993FD24AC1E6400D382ED /* Kylin */;
+			targetProxy = 13AAA17B24B59EA6002A7A8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1379940A24AC1E6400D382ED /* Main.storyboard */ = {
@@ -935,6 +1085,80 @@
 			};
 			name = Release;
 		};
+		13AAA16F24B59E76002A7A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9F546C5G4;
+				INFOPLIST_FILE = KylinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.KylinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kylin.app/Kylin";
+			};
+			name = Debug;
+		};
+		13AAA17024B59E76002A7A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9F546C5G4;
+				INFOPLIST_FILE = KylinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.KylinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kylin.app/Kylin";
+			};
+			name = Release;
+		};
+		13AAA17E24B59EA6002A7A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9F546C5G4;
+				INFOPLIST_FILE = KylinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.KylinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kylin;
+			};
+			name = Debug;
+		};
+		13AAA17F24B59EA6002A7A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G9F546C5G4;
+				INFOPLIST_FILE = KylinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.KylinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kylin;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -988,6 +1212,24 @@
 			buildConfigurations = (
 				137994E724AC639100D382ED /* Debug */,
 				137994E824AC639100D382ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AAA17124B59E76002A7A8A /* Build configuration list for PBXNativeTarget "KylinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AAA16F24B59E76002A7A8A /* Debug */,
+				13AAA17024B59E76002A7A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13AAA17D24B59EA6002A7A8A /* Build configuration list for PBXNativeTarget "KylinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AAA17E24B59EA6002A7A8A /* Debug */,
+				13AAA17F24B59EA6002A7A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
